@@ -56,6 +56,6 @@ public class Contato implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "Id do contato: " + id_contato + " Nome: " + nm_contato + " email: " + email_contato + " Telefone: " + tel_cel_contato;
+		return " NOME: " + nm_contato + ", E-MAIL: " + email_contato + ", TELEFONE CELULAR: " + tel_cel_contato;
 	}
 }
