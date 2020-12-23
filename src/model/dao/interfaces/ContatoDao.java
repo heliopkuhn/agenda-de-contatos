@@ -8,5 +8,5 @@ public interface ContatoDao {
 	
 	List<Contato> encontrarContato(String dadoContato);
 	
-	void salvarContato(Contato contado);
+	void salvarContato(Contato contato);
 }

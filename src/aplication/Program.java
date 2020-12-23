@@ -17,13 +17,19 @@ public class Program {
 		
 		ContatoDao contatojdbl = new ContatoImpJdbc(conn);
 		
-		List<Contato> listaContato = new ArrayList<>();
+		//List<Contato> listaContato = new ArrayList<>();
 		
-		listaContato = contatojdbl.encontrarContato("RAFA@");
+		//listaContato = contatojdbl.encontrarContato("RAFA@");
 		
-		for(Contato contato : listaContato) {
-			System.out.println(contato);
-		}
+		//for(Contato contato : listaContato) {
+		//	System.out.println(contato);
+		//}
+		
+		Contato contato = new Contato();
+			contato.setNm_contato("HEIO TESTE DATA");
+			contato.setEmail_contato("EMAIL@GMAIL.COM");
+			contato.setTel_cel_contato("5144688757");
+			contatojdbl.salvarContato(contato);
 	
 		DB.closeConection();
 	
